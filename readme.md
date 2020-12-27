@@ -24,3 +24,10 @@ Third, install and use the firmware updater tool:
 5. Hit the "Browse" button and find "BC127 Firmware Versions" in this repo and select the Melody firmware version that you want.
 6. Hit "Next" to start the Firmware update process.  It will take many minutes.
 
+If you are changing the firmware back to V5, you also need to initilize the settings of the V5 software:
+1. In the Arduino IDE, open the example sketch "File -> Examples -> Tympan_Library -> 02-Utility -> RenameTympanBT"
+2. Depending upon whether you have a Tympan RevD or RevE, but sure to set the correct TympanRev for your device
+3. Compile and upload
+4. Open the SerialMonitor and watch the progress.  Hopefully it finishes satisfactorily.
+
+Now, you should be done.  You can load whatever Tympan sketch you would like.
