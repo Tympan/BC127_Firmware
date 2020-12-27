@@ -5,7 +5,7 @@ BC127_Firmware
 
 **History**: Most of the Tympan RevD units were shipped with BC127 modules that came from the original vendor with the "V5" version of the Melody firmware.  While developing the Tympan RevE, we found that the BC127 modules came from original vendor with "V6" version of the firmware.  While figuring out how to change the firmware, we found that a newer "V7" version was also available.  Using the tool in this repo, any version of the BC127 can be changed to any other version.
 
-** Instructions**: 
+**Instructions**: 
 
 First, download this repository.
 
@@ -24,7 +24,7 @@ Third, install and use the firmware updater tool:
 5. Hit the "Browse" button and find "BC127 Firmware Versions" in this repo and select the Melody firmware version that you want.
 6. Hit "Next" to start the Firmware update process.  It will take many minutes.
 
-If you are changing the firmware back to V5, you also need to initilize the settings of the V5 software:
+Fourth, if you are changing the firmware back to V5, you also need to initilize the settings of the V5 software:
 1. In the Arduino IDE, open the example sketch "File -> Examples -> Tympan_Library -> 02-Utility -> RenameTympanBT"
 2. Depending upon whether you have a Tympan RevD or RevE, but sure to set the correct TympanRev for your device
 3. Compile and upload
