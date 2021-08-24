@@ -18,19 +18,19 @@ usb_serial_class *USB_Serial = &Serial;
 HardwareSerial *BT_Serial = &Serial1;
 //#define RTS_PIN 18  //Chosen by WEA
 //#define CTS_PIN 19  //for Serial3
-//#if 0
+#if 1  //set to 1 for RevE or set to 0 for RevD
   //Tympan RevE
   #define BT_REGEN 14 //from Tympan RevE
   #define BT_RESET 9  //from Tympan RevE
   #define BT_PIO0 5   //from Tympan RevE
   #define BT_PIO5 2   //from Tympan RevE
-//#else
-//  //Tympan RevD
-//  #define BT_REGEN 31 //from Tympan RevD
-//  #define BT_RESET 35  //from Tympan RevD
-//  #define BT_PIO0 56   //from Tympan RevD
-//  #define BT_PIO5 33   //from Tympan RevD
-//#endif
+#else
+  //Tympan RevD
+  #define BT_REGEN 31 //from Tympan RevD
+  #define BT_RESET 35  //from Tympan RevD
+  #define BT_PIO0 56   //from Tympan RevD
+  #define BT_PIO5 33   //from Tympan RevD
+#endif
 String response, given_BT_name, BT_hex;
  
 void echoIncomingUSBSerial(void) {
