@@ -13,6 +13,11 @@
  *          
  * Open Source via MIT License.  Use at your own risk.         
  */
+
+// //////////// WARNING: I think that this code expects that the BC127 starts up with a baudrate of 9600
+// //////////// This isn't necessarily true anymore.  Therefore, you might need to run the BC127/ChangeBaudrate
+// //////////// example prior to running this code.  Or, we need to alter this code fo do a factory reset
+// //////////// via the PIO pins.
  
 usb_serial_class *USB_Serial = &Serial;
 HardwareSerial *BT_Serial = &Serial1;
