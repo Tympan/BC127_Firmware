@@ -31,7 +31,7 @@ Now, you should be done with the firmware upgrad.  To actually use the Tympan, y
 
 
 
->>>>>>>>>>>>>>>>> The step below shouldn't be needed anymore!  I'm only keeping it here just in case. :)
+-------------- The step below shouldn't be needed anymore!  I'm only keeping it here just in case. :)
 Fourth, if you are changing the firmware back to V5, you also need to initilize the settings of the V5 software:
 1. In the Arduino IDE, open the example sketch "File -> Examples -> Tympan_Library -> 02-Utility -> RenameTympanBT"
 2. Depending upon whether you have a Tympan RevD or RevE, but sure to set the correct TympanRev for your device
