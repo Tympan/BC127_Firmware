@@ -27,13 +27,6 @@ Third, install and use the firmware updater tool:
     - If you have a Tympan RevE from ASA or later, choose the V7.3 HD firmware
 6. Hit "Next" to start the Firmware update process.  It will take about 5 minutes.
 
-Now, you should be done with the firmware upgrad.  To actually use the Tympan, you need to pick a Tympan sketch that you want to run and then compile and load it onto your Tympan.
+Now, you should be done with the firmware upgrade.  
 
-
-
--------------- The step below shouldn't be needed anymore!  I'm only keeping it here just in case. :)
-Fourth, if you are changing the firmware back to V5, you also need to initilize the settings of the V5 software:
-1. In the Arduino IDE, open the example sketch "File -> Examples -> Tympan_Library -> 02-Utility -> RenameTympanBT"
-2. Depending upon whether you have a Tympan RevD or RevE, but sure to set the correct TympanRev for your device
-3. Compile and upload
-4. Open the SerialMonitor and watch the progress.  Hopefully it finishes satisfactorily.
+To actually use the Tympan, you need to pick a Tympan sketch that you want to run and then compile and load it onto your Tympan.
