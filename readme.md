@@ -20,14 +20,17 @@ Third, install and use the firmware updater tool:
 1. From "Firmware Updater Tool", unzip "BlueSuite_2_6_6_1311.zip" and install
 2. Run "DfuWizard.exe"
 3. When running, Choose "Next" and then choose "COM Port" and then choose the COM Port for your Tympan.  Hit "Next".
-4. Choose either of the first two radio buttons.  The second one "Download a new version of the firmware, without first saving a copy of the current version." will be faster.  Hit "Next".
+4. Choose the second radio button "Download a new version of the firmware, without first saving a copy of the current version." will be faster.  Hit "Next".
 5. Hit the "Browse" button and find "BC127 Firmware Versions" in this repo and select the Melody firmware version that you want.
-6. Hit "Next" to start the Firmware update process.  It will take many minutes.
+    - If you have a Tympan RevD, choose the V5.5 firmware
+    - If you have a Tympan RevE from before ASA, choose the V7.3 firmware
+    - If you have a Tympan RevE from ASA or later, choose the V7.3 HD firmware
+6. Hit "Next" to start the Firmware update process.  It will take about 5 minutes.
+
+Now, you should be done with the firmware upgrad.  To actually use the Tympan, you need to pick a Tympan sketch that you want to run and then compile and load it onto your Tympan.
 
 Fourth, if you are changing the firmware back to V5, you also need to initilize the settings of the V5 software:
 1. In the Arduino IDE, open the example sketch "File -> Examples -> Tympan_Library -> 02-Utility -> RenameTympanBT"
 2. Depending upon whether you have a Tympan RevD or RevE, but sure to set the correct TympanRev for your device
 3. Compile and upload
 4. Open the SerialMonitor and watch the progress.  Hopefully it finishes satisfactorily.
-
-Now, you should be done.  You can load whatever Tympan sketch you would like.
